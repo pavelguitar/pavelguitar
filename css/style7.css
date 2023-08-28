@@ -282,7 +282,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     z-index: 0;
 }
 
@@ -607,7 +607,7 @@ input.btn.btn-dark.w-100.fw-bold
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     z-index: 0;
 }
 
