@@ -51,6 +51,71 @@
                         console.log('FAILED...', error);
                     });
             });
+
+
+            document.getElementById('contact-form1').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_avnc3ya', 'template_67exqtw', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        
+                        document.getElementById('contact-form1').reset();
+                        
+                        var successdiv = document.getElementById('success-msg1');
+
+                        successdiv.innerHTML += 'Request has been sent';
+                        
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+            
+            
+            
+            document.getElementById('contact-form2').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_avnc3ya', 'template_67exqtw', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        
+                        document.getElementById('contact-form2').reset();
+                        
+                        var successdiv = document.getElementById('success-msg2');
+
+                        successdiv.innerHTML += 'Request has been sent';
+                        
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+            
+            
+                 
+            document.getElementById('contact-form3').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_avnc3ya', 'template_67exqtw', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        
+                        document.getElementById('contact-form3').reset();
+                        
+                        var successdiv = document.getElementById('success-msg3');
+
+                        successdiv.innerHTML += 'Request has been sent';
+                        
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
         }
     </script>
     <style>
@@ -220,7 +285,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="card cardborder1 mb-3 text-center">
                                     <div class="card-header">
-                                    <h3>Free Oriantation</h3>
+                                    <h3>Orientation</h3>
                                     <h4 class="custom-min-height">20 minute - $0</h4>
                                     </div>
                                     <div class="card-body">
@@ -229,7 +294,7 @@
                                     <div class="row justify-content-center">
                                     <div class="col-lg-12">
                                   
-                                        <form class="send-enquery mt-3" id="contact-form">
+                                        <form class="send-enquery mt-3" id="contact-form1">
                                             <input type="hidden" name="contact_number">
                                         
                                         <input type="hidden" name="message" value="Query for Free Oriantation">
@@ -246,7 +311,7 @@
                                             </div>
                                         </form>
                                         
-                                        <div style="color:green;" class="text-center mt-2" id="success-msg"></div>
+                                        <div style="color:green;" class="text-center mt-2" id="success-msg1"></div>
                                     
                                     </div>
                                     </div>
@@ -264,7 +329,7 @@
                                     <div class="card-body">
                                     <p>Learn guitar, composition, arrangement and anything else you need to take your playing to the next level.
                                     </p>
-                                    <span style="font-style:italic; margin-top:10px;">Includes free orientation.</span>
+                                    <span style="font-style:italic; margin-top:10px;">Includes orientation.</span>
                                     </div>
                                     <div class="row justify-content-center">
                                     <div class="col-lg-12">
@@ -302,7 +367,7 @@
                                     <p>
                                         For those who really want to step their game up. Make serious progress while getting a discount(€62.5 per lesson)
                                     </p>
-                                     <span style="font-style:italic; margin-top:10px;">Includes free orientation.</span>
+                                     <span style="font-style:italic; margin-top:10px;">Includes orientation.</span>
                                      </div>
                                     
                                     <div class="row justify-content-center">
